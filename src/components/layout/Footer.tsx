@@ -30,11 +30,6 @@ const Footer = () => {
                   Jobs
                 </Link>
               </li>
-              <li>
-                <Link to="/about" className="text-sm text-gray-300 hover:text-white transition-colors">
-                  About
-                </Link>
-              </li>
             </ul>
           </div>
           <div>
