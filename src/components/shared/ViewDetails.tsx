@@ -123,14 +123,14 @@ const ViewDetails = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange} >
-      <DialogContent className="max-w-4xl w-full p-0 h-[90vh] flex flex-col bg-white shadow-lg">
+      <DialogContent className="max-w-2xl w-full p-0 h-[90vh] flex flex-col bg-white shadow-lg">
         <Button variant="ghost" size="icon" className="absolute right-4 top-4 z-50 rounded-full bg-black/30 text-white hover:bg-black/50" onClick={() => onOpenChange(false)}>
           <X className="h-4 w-4" />
         </Button>
         
         {/* Image Carousel */}
-        <div className="bg-black h-1/2">
-          <Carousel className="w-full h-full">
+        <div className="bg-white h-1/2.5">
+          <Carousel className="w-full h-full ">
             <CarouselContent className="h-full">
               {images.length > 0 ? (
                 images.map((img, index) => (
@@ -159,7 +159,7 @@ const ViewDetails = ({
         </div>
         
         {/* Details Section */}
-        <div className="flex-1 overflow-y-auto p-6 py-[65px] mx-[33px] rounded-xl my-0 bg-white shadow-lg">
+        <div className="flex-1 overflow-y-auto p-4 py-[65px] mx-[33px] rounded-xl my-0 bg-white shadow-lg">
 
           {renderDetails()}
           
