@@ -122,8 +122,8 @@ const ViewDetails = ({
   );
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl w-full p-0 h-[90vh] flex flex-col">
+    <Dialog open={open} onOpenChange={onOpenChange} >
+      <DialogContent className="max-w-4xl w-full p-0 h-[90vh] flex flex-col bg-white shadow-lg">
         <Button variant="ghost" size="icon" className="absolute right-4 top-4 z-50 rounded-full bg-black/30 text-white hover:bg-black/50" onClick={() => onOpenChange(false)}>
           <X className="h-4 w-4" />
         </Button>
@@ -159,7 +159,8 @@ const ViewDetails = ({
         </div>
         
         {/* Details Section */}
-        <div className="flex-1 overflow-y-auto p-6 py-[65px] mx-[33px] rounded-xl my-0">
+        <div className="flex-1 overflow-y-auto p-6 py-[65px] mx-[33px] rounded-xl my-0 bg-white shadow-lg">
+
           {renderDetails()}
           
           {/* Contact Button */}

@@ -122,7 +122,7 @@ const ProductCard = ({ product, onProductUpdate }: ProductCardProps) => {
             }}
           />
           <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black/50 to-transparent">
-            <p className="text-white font-medium text-xl">${product.price.toFixed(2)}</p>
+            <p className="text-white font-medium text-xl">₱{product.price.toFixed(2)}</p>
           </div>
           {/* Save button */}
           {user && (
