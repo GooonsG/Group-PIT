@@ -53,7 +53,7 @@ const ViewDetails = ({
       return <div className="space-y-4">
           <div>
             <h2 className="text-2xl font-bold">{product.title}</h2>
-            <p className="text-xl font-semibold text-green-600">${product.price.toFixed(2)}</p>
+            <p className="text-xl font-semibold text-green-600">₱{product.price.toFixed(2)}</p>
           </div>
           
           <div>
