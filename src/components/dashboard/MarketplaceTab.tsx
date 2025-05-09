@@ -56,26 +56,7 @@ const MarketplaceTab = ({
                   <Badge className={item.status === 'active' ? 'bg-green-500 text-white' : 'bg-gray-500 text-white'}>
                     {item.status === 'active' ? 'Active' : 'Sold'}
                   </Badge>
-                  <div className="flex space-x-1">
-                    <Button 
-                      size="sm" 
-                      variant="outline" 
-                      className="h-8 px-2"
-                      onClick={() => handleEditListing(item.id)}
-                    >
-                      Edit
-                    </Button>
-                    {item.status === 'active' && (
-                      <Button 
-                        size="sm" 
-                        variant="outline" 
-                        className="h-8 px-2 text-red-500 border-red-200 hover:bg-red-50"
-                        onClick={() => handleDeleteListing(item.id)}
-                      >
-                        Delete
-                      </Button>
-                    )}
-                  </div>
+                  
                 </div>
               </div>
             ))}
